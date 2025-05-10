@@ -1,0 +1,23 @@
+# PowerShell-specific
+*.ps1~
+*.psm1~
+*.psd1~
+*.log
+*.tmp
+*.bak
+*.swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+.history/
+
+# Node & misc
+node_modules/
+bin/
+obj/
