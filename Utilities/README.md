@@ -8,14 +8,14 @@ This folder contains general-purpose PowerShell scripts used for system cleanup,
 Installs all available Windows Updates using the PSWindowsUpdate module.
 
 - Installs the module if not present
-- Bypasses execution policy for smoother runs
+- removes Restriction from execution policy for smoother runs
 - Uses Microsoft Update as the source
 - Accepts and installs all updates silently
 
 **How to run:**
 
 ```powershell
-Set-ExecutionPolicy Bypass -Force;
+Set-ExecutionPolicy Unrestricted -Force;
 Install-Module PSWindowsUpdate -Force | Out-Null;
 Import-Module PSWindowsUpdate;
 Get-WindowsUpdate -Install -AcceptAll -MicrosoftUpdate;
